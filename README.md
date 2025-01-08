@@ -114,6 +114,22 @@ sudo rm -rf /etc/nginx-py
 This will completely remove the Python HTTP server and its associated systemd service from your system.
 
 
+## API Reference
+
+#### Reload Nginx
+
+```http
+  GET curl localhost:8088/reload-nginx
+```
+
+| Response | Type     | Message                |
+| :-------- | :------- | :------------------------- |
+| `200` | `Suceess` | Nginx configuration is valid and reloaded successfully |
+
+
+
+
+
 ## Feedback
 
 If you have any feedback, please reach out to us at ekapon.chukaew@gmail.com
