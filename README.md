@@ -119,7 +119,7 @@ This will completely remove the Python HTTP server and its associated systemd se
 #### Reload Nginx
 
 ```http
-  GET curl localhost:8088/reload-nginx
+  curl localhost:8088/reload-nginx
 ```
 
 | Response | Type     | Message                |
@@ -130,6 +130,23 @@ This will completely remove the Python HTTP server and its associated systemd se
 
 
 
+## Related
+
+Here are some related projects
+
+[schenkd nginx-ui](https://github.com/schenkd/nginx-ui)
+
+```yaml
+version: '3'
+
+services:
+  nginx-ui:
+    image: schenkd/nginx-ui:latest
+    ports:
+      - 8080:8080
+    volumes:
+      - nginx:/etc/nginx
+```
 ## Feedback
 
 If you have any feedback, please reach out to us at ekapon.chukaew@gmail.com
